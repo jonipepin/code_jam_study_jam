@@ -1,0 +1,11 @@
+Alphabet-Cake
+
+Approach 1:
+Start at a letter, draw a bounding box around it that include only '?'
+
+Approach 2 (my implementation and I think its simpler):
+Fill up each row:
+1) Scan each row, extend each letter into cells to the right of that letter until we reach another letter or the end of the row.
+2) You end up with empty cells to the left of the rows. Extend the left most letter to the cells to the left of that letter.
+3) Any rows without letters are still empty. Scan each row. For each empty row, replace it with the row above it.
+4) Any remaining rows are at the top of the grid. Find the first non-empty row and extend to the rows above it.
