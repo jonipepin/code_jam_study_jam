@@ -8,8 +8,8 @@ public class Solution {
 
     public static void main(String[] args) {
         try {
-            BufferedReader br = new BufferedReader(new FileReader("src/B-small-practice.in"));
-//            BufferedReader br = new BufferedReader(new FileReader("src/B-large-practice.in"));
+            BufferedReader br = new BufferedReader(new FileReader("B-small-practice.in"));
+//            BufferedReader br = new BufferedReader(new FileReader("B-large-practice.in"));
             bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("solution.out"), "utf-8"));
             int n = Integer.parseInt(br.readLine());
 
